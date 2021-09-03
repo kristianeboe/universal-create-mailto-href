@@ -1,22 +1,28 @@
 {
   "name": "universal-create-mailto-href",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A typed and tested function to generate Mailto links in any environment(universal).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test",
-    "version" : "git add -A src",
-    "postversion" : "git push"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "version": "git add -A src",
+    "postversion": "git push",
+    "deploy": "npm version patch --force && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kristianeboe/universal-create-mailto-href.git"
   },
-  "keywords": ["mailto", "href", "email linik", "universal"],
+  "keywords": [
+    "mailto",
+    "href",
+    "email linik",
+    "universal"
+  ],
   "author": "Kristian Elset Bø",
   "license": "ISC",
   "bugs": {
